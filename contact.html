@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Clark Center - Contact Us</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
+  <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
+    <script src="https://kit.fontawesome.com/c1b5ce6404.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" alt="Clark Center for Comprehensive Medicine Logo">Clark Center for Comprehensive Medicine</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="obesitycenter.html">Obesity Center</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Contact
+      <!-- <small>Subheading</small> -->
+    </h1>
+
+    <!-- <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Contact</li>
+    </ol> -->
+
+    <!-- Content Row -->
+    <div class="row">
+      <!-- Map Column -->
+      <div class="col-lg-8 mb-4">
+        <!-- Embedded Google Map -->
+        <div id="map" class="map"></div>
+        <script type="text/javascript">
+          var map = new ol.Map({
+            target: 'map',
+            layers: [
+              new ol.layer.Tile({
+                source: new ol.source.OSM()
+              })
+            ],
+            view: new ol.View({
+              center: ol.proj.fromLonLat([-83.332819, 42.325450]),
+              zoom: 18
+            })
+          });
+        </script>
+      </div>
+      <!-- Contact Details Column -->
+      <div class="col-lg-4 mb-4">
+        <h3>Clark Center for Comprehensive Medicine</h3>
+        <p>
+          29521 Ford Rd. 
+          <br>Garden City, MI 48135
+          <br>
+        </p>
+        <p>
+          <abbr title="Phone"><i class="fas fa-phone-alt"></i></abbr> (734) 367-1205
+        </p>
+        <p>
+          <abbr title="Email"><i class="fas fa-envelope"></i></abbr>
+          <a href="mailto:name@example.com">clarkcenter@gmail.com
+          </a>
+        </p>
+        <p>
+          <abbr title="Hours"><i class="fas fa-calendar-alt"></i></abbr><br>Monday: 8:00 AM to 4:00 PM<br>Tuesday - Thursday: 8:30 AM to 4:00 PM<br>Friday: 8:30 AM to 12:00 PM
+        </p>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+    <!-- Contact Form -->
+    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <div class="appointmentSec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Schedule an Appointment</h2>
+                    <form class="form" id="contactForm">
+                      <div class="form-group">
+                          <input type="text" class="form-control mb-4" placeholder="Name" id="name">
+                          <input type="text" class="form-control mb-4" placeholder="Email" id="email">
+                          <input type="text" class="form-control mb-4" placeholder="Phone Number" id="phone">
+                          <input type="text" class="form-control mb-4" placeholder="Reason for Appointment" id="message">
+                          <button type="submit" class="btn btn-lg btn-secondary btn-block" id="sendMessageButton">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+            </div>
+          </div>
+    </div>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+              <p class="m-0 text-left text-white"><a href="about.html">About</a><br><a href="services.html">Services</a><br><a href="obesitycenter.html">Obesity Center</a><br><a href="contact.html">Contact</a></p>
+          </div>
+          <div class="col-lg-4 offset-lg-4 address">
+              <p class="m-0 text-right text-white">Clark Center for Comprehensive Medicine <br>29521 Ford Rd.<br>Garden City, Michigan 48135</p>
+          </div>
+        </div>
+      </div>
+      <p class="m-0 text-center text-white">Copyright &copy; Clark Center for Comprehensive Medicine 2019</p>
+      <!-- /.container -->
+    </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+
+</body>
+
+</html>

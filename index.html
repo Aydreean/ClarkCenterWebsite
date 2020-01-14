@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/css/ol.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Roboto+Slab:300,400,500,700&display=swap" rel="stylesheet">
+  <style>
+    .map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.1.1/build/ol.js"></script>
+  <script src="https://kit.fontawesome.com/c1b5ce6404.js" crossorigin="anonymous"></script>
+  <title>Clark Center for Comprehensive Medicine</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" alt="Clark Center for Comprehensive Medicine Logo">Clark Center</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="obesitycenter.html">Obesity Center</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="true">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url(images/IMG_3131i.jpg)">
+          <div class="container">
+            <div class="row red">
+              <div class="col-lg-6">
+                <div>
+                    <h1 class="text-center contentstart text-white cta-text">Discover A Healthier You</h1>
+                    <a href="#"><button class="btn btn-lg btn-secondary btn-block cta shadow"><i class="fas fa-phone-alt mr-4"></i>Call Our Office!</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+              <div class="carousel-caption d-none d-md-block">
+                  <!-- <h3>First Slide</h3>
+                  <p>This is a description for the second slide.</p> -->
+                </div>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/IMG_3126.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Second Slide</h3>
+            <p>This is a description for the second slide.</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('images/IMG_3124.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Third Slide</h3>
+            <p>This is a description for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Marketing Icons Section -->
+    <div class="row mt-4 contentstart">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header"><i class="fas fa-stethoscope mb-4"></i><br>Internal Medicine</h4>
+          <div class="card-body">
+            <p class="card-text">We concentrate on prevention, diagnosis, and treatment of adult diseases. Services are provided at our out-patient facility. We also utilize the <span><a href="https://www.beaumont.org/">Beaumont Hospital System</a></span> and are affiliated with long-term care facilities and skilled nursing homes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header"><i class="fab fa-nutritionix mb-4"></i><br>Obesity</h4>
+          <div class="card-body">
+            <p class="card-text">We offer nonsurgical weight loss programs utilizing FDA-approved medications, behavior modification, exercise, and changes in lifestyle for overweight and obese patients.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header"><i class="fas fa-clinic-medical mb-4"></i><br>House Calls</h4>
+          <div class="card-body">
+            <p class="card-text">We take pride in offering comprehensive home-based medical care. Our focus in doing so is to maintain your health and independence, and to avoid the need for hospitalization, rehospitalization, or admission into long-term care facilities/nursing homes/skilled rehabilitation centers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Features Section -->
+    <!-- <div class="row">
+      <div class="col-lg-6">
+        <h2>Obesity Center</h2>
+        <p>The Modern Business template by Start Bootstrap includes:</p>
+        <ul>
+          <li>
+            <strong>Bootstrap v4</strong>
+          </li>
+          <li>jQuery</li>
+          <li>Font Awesome</li>
+          <li>Working contact form with validation</li>
+          <li>Unstyled page elements for easy customization</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+      </div>
+    </div> -->
+    <!-- /.row -->
+  </div>
+    <!-- Appointment Form -->
+    <div class="appointmentSec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Schedule an Appointment</h2>
+                    <form class="form" id="contactForm">
+                      <div class="form-group">
+                          <input type="text" class="form-control mb-4" placeholder="Name" id="name">
+                          <input type="text" class="form-control mb-4" placeholder="Email" id="email">
+                          <input type="text" class="form-control mb-4" placeholder="Phone Number" id="phone">
+                          <input type="text" class="form-control mb-4" placeholder="Reason for Appointment" id="message">
+                          <button type="submit" class="btn btn-lg btn-secondary btn-block" id="sendMessageButton">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+            </div>
+          </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="row">
+        <div class="col-lg-12">
+          <div id="map" class="map">
+            <!-- map goes here -->
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        var map = new ol.Map({
+          target: 'map',
+          layers: [
+            new ol.layer.Tile({
+              source: new ol.source.OSM()
+            })
+          ],
+          view: new ol.View({
+            center: ol.proj.fromLonLat([-83.332819, 42.325450]),
+            zoom: 18
+          })
+        });
+
+        // var marker = new ol.Feature({
+        //   geometry: new ol.geom.Point(
+        //     ol.proj.fromLonLat([-83.332819, 42.32545])
+        //   )});
+
+        //   var vectorSource = new ol.source.Vector({
+        //     features: [marker]
+        //   });
+
+        //   var markerVectorLayer = new ol.layer.Vector({
+        //     source: vectorSource,
+        // });
+
+      </script>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+            <p class="m-0 text-left text-white"><a href="about.html">About</a><br><a href="services.html">Services</a><br><a href="obesitycenter.html">Obesity Center</a><br><a href="contact.html">Contact</a></p>
+        </div>
+        <div class="col-lg-4 offset-lg-4 address">
+            <p class="m-0 text-right text-white">Clark Center for Comprehensive Medicine <br>29521 Ford Rd.<br>Garden City, Michigan 48135</p>
+        </div>
+      </div>
+    </div>
+    <p class="m-0 text-center text-white">Copyright &copy; Clark Center for Comprehensive Medicine 2019</p>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+  <script>
+    var carousel = $('#carouselExampleIndicators');
+    console.log(carousel);
+    carousel.carousel('pause');
+  </script>
+</body>
+
+</html>
