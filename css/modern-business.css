@@ -47,9 +47,9 @@ body {
 
 
 /*Content Styles*/
-.contentstart {
+/* .contentstart {
   padding-top: 20px;
-}
+} */
 
 .homeJumbo {
   height: 90vh;
@@ -105,12 +105,12 @@ ol.breadcrumb li {
   color: #b4cc73;
 }
 
-.appointmentSec {
+.appointmentSec, .teamSec {
   background: #b4cc73;
   padding: 40px 0;
 }
 
-.appointmentSec h2 {
+.appointmentSec h2, .teamSec h2 {
   color: white;
   padding: 0 0 20px 0;
   text-align: center;
