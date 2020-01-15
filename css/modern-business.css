@@ -4,6 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
+
+/* Document-Wide Styles */
+* {
+  font-family: "Raleway", helvetica, sans-serif;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -13,10 +19,9 @@ body {
   padding-top: 56px;
 }
 
-* {
-  font-family: "Raleway", helvetica, sans-serif;
-}
 
+
+/*Navigation Styles*/
 .navbar {
   background: #cbdc9e;
 }
@@ -26,18 +31,61 @@ body {
   border: none;
 }
 
+
+
+/*Carousel Styles*/
 .carousel-item {
+  background: no-repeat center center scroll;
   height: 90vh;
   min-height: 300px;
-  background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
+
+
+/*Content Styles*/
 .contentstart {
   padding-top: 20px;
+}
+
+.homeJumbo {
+  height: 90vh;
+}
+
+.homeJumbo div {
+  margin: auto;
+}
+
+.homeJumbo a {
+  color: white;
+}
+
+.homeJumbo a:hover {
+  text-decoration: none;
+}
+
+h1.cta-text {
+  text-shadow: 1px 1px 3px #444;
+}
+
+button.cta {
+  background: #cbdc9e;
+  border: none;
+  height: 10vh;
+  margin-top: 40px;
+}
+
+ol.breadcrumb {
+  background: none;
+  margin-top: -10px;
+  padding: 0;
+}
+
+ol.breadcrumb li {
+  padding: none;
 }
 
 .card-body, .card, .card-header {
@@ -53,26 +101,43 @@ body {
   text-align: center;
 }
 
+.card i, abbr i {
+  color: #b4cc73;
+}
+
 .appointmentSec {
   background: #b4cc73;
   padding: 40px 0;
 }
 
-
 .appointmentSec h2 {
   color: white;
-  text-align: center;
   padding: 0 0 20px 0;
-}
-
-.portfolio-item {
-  margin-bottom: 30px;
+  text-align: center;
 }
 
 .form input, .form button {
   padding: 25px;
 }
 
+span {
+  font-weight: bold;
+}
+
+span a, a {
+  color: #cbdc9e;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item.active {
+  background: #b4cc73;
+}
+
+
+/*Footer Styles*/
 footer a {
   color: #cbdc9e;
 }
@@ -86,40 +151,4 @@ footer.stickybottom {
   bottom: 0;
   left: 0;
   width: 100%;
-}
-
-span {
-  font-weight: bold;
-}
-
-span a, a {
-  color: #cbdc9e;
-}
-
-h1.cta-text {
-  text-shadow: 1px 1px 3px #444;
-}
-
-button.cta {
-  background: #cbdc9e;
-  border: none;
-  height: 10vh;
-}
-
-.red {
-  height: 90vh;
-}
-
-.red div {
-  /* margin-top: auto;
-  margin-bottom: auto; */
-  margin: auto;
-}
-
-.red a {
-  color: white;
-}
-
-.red a:hover {
-  text-decoration: none;
 }
