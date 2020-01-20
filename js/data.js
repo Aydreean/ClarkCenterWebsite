@@ -2,9 +2,6 @@
 
 let returnData = () => {
     let data = {
-        Name: "Clark Center for Comprehensive Medicine",
-        Address: "29514 Ford Rd. Garden City, Michigan 48135",
-        Telephone: "(734)3671205",
         services: [
             {
                 id: 1,
@@ -27,4 +24,4 @@ let returnData = () => {
     return data;
 }
 
-console.log(returnData());
+returnData();

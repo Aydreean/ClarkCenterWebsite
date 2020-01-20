@@ -31,6 +31,10 @@ body {
   border: none;
 }
 
+.nav-item {
+  font-size: 18px;
+  font-weight: 500;
+}
 
 
 /*Carousel Styles*/
@@ -76,6 +80,10 @@ button.cta {
   border: none;
   height: 10vh;
   margin-top: 40px;
+}
+
+.carousel-indicators li {
+  background-color: #cbdc9e;
 }
 
 ol.breadcrumb {
