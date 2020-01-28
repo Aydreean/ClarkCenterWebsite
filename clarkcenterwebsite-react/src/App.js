@@ -1,15 +1,21 @@
 import React from 'react';
 import { Component } from 'react';
-// import './App.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import './modern-business.css';
 import 'font-awesome/css/font-awesome.css';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 //Custom Components
 import Navbar from './components/Navbar';
-import Carousel from './components/Carousel';
-import Marketing from './components/Marketing';
-import HomeMap from './components/HomeMap';
+import HomePage from './components/HomePage';
+import AboutPage from './components/AboutPage';
+import ServicesPage from './components/ServicesPage';
+// import Carousel from './components/Carousel';
+// import Marketing from './components/Marketing';
+// import AppointmentForm from './components/AppointmentForm';
+// import HomeMap from './components/HomeMap';
+import Footer from './components/Footer';
+import ObesityCenterPage from './components/ObesityCenterPage';
+import ContactPage from './components/ContactPage';
 
 
 export class App extends Component {
@@ -75,13 +81,19 @@ export class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <Navbar></Navbar>
-        <Carousel carousel={this.state.carousel}></Carousel>
-        <Marketing marketing={this.state.marketing}></Marketing>
-        <HomeMap></HomeMap>
-    </div>
+      <Router>
+        <div className="App">
+          <Navbar></Navbar>
+          <Route exact path="/" render={(props) => <HomePage marketing={this.state.marketing} carousel={this.state.carousel} />}/>
+          <Route path="/About" render={(props) => <AboutPage/>}/>
+          <Route path="/Services" render={(props) => <ServicesPage services={this.state.services} />}/>
+          <Route path="/ObesityCenter" render={(props) => <ObesityCenterPage/>}/>
+          <Route path="/Contact" render={(props) => <ContactPage/>}/>
+          <Footer></Footer>
+        </div>
+      </Router>
     )
+
   }
 }
 

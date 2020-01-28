@@ -33,10 +33,14 @@ body {
 }
 
 .nav-item {
+  color: white;
   font-size: 18px;
   font-weight: 500;
 }
 
+.navbar a {
+  line-height: 16px;
+}
 
 /*Carousel Styles*/
 .carousel-item {

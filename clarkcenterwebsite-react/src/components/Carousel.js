@@ -19,7 +19,7 @@ const Carousel = (props) => {
                     <div className="col-lg-6">
                         <div>
                             <h1 className="text-center contentstart text-white cta-text">Discover A Healthier You</h1>
-{/*<a href="#">*/}<button className="btn btn-lg btn-secondary btn-block cta shadow"><i className="fas fa-phone-alt mr-4"></i>Call Our Office!</button>{/*</a>*/}
+                                <button className="btn btn-lg btn-secondary btn-block cta shadow"><i className="fas fa-phone-alt mr-4"></i>Call Our Office!</button>
                         </div>
                     </div>
                     </div>
