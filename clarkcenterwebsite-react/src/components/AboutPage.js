@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
+import DonImage from '../images/IMG_3171i.jpg';
+import DonBio from '../components/DonBio';
+import TeamBio from '../components/TeamBio';
 
-export default class AboutPage extends Component {
-    render() {
-        return (
-            <div className="contentstart">
-                <h3>About Page</h3>
-            </div>
-        )
-    }
+const AboutPage = (props) => {
+    return (
+        <div>
+            <DonBio profileImage={DonImage} profileCopy={props.profile.profileCopy}></DonBio>
+            <TeamBio teamProfile={props.profile.teamProfile}></TeamBio>
+        </div>
+    )
 }
+
+export default AboutPage
+

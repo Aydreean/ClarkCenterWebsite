@@ -9,10 +9,6 @@ import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import ServicesPage from './components/ServicesPage';
-// import Carousel from './components/Carousel';
-// import Marketing from './components/Marketing';
-// import AppointmentForm from './components/AppointmentForm';
-// import HomeMap from './components/HomeMap';
 import Footer from './components/Footer';
 import ObesityCenterPage from './components/ObesityCenterPage';
 import ContactPage from './components/ContactPage';
@@ -23,6 +19,38 @@ export class App extends Component {
     super(props);
 
     this.state = {
+      profile: {
+        proflileImage: "IMG_3171i.jpg",
+        profileCopy: <div><p>Donald Clark, PA-C, makes access to comprehensive medical care convenient for his aging patients and extends care to underserved communities in metro Detroit and in Central and South America. In 2004, after working for several years in cardiology, urgent care and in primary care practices, he established <span><a href="/">Clark Center for Comprehensive Medicine</a></span>. There, he provides centralized access to care to patients, most of whom he’s treated for almost three decades.</p><p>Partnering with two collaborating physicians, Dr. Clark manages patients holistically. Treatment plans tap into patients’ emotional, physical and spiritual well-being as well as social determinants such as access to transportation, mobility, finances and housing. He even likes to involve family members to take a team approach to solving patients’ medical issues. Since most of his patients have complex, debilitating medical problems and are over the age of 50, he has expanded from onsite primary care to offering extended services, including ongoing homecare, hospital, nursing home and sub-acute rehabilitation center rounds. He follows patients from outpatient to inpatient admission and coordinates access to physical and occupational therapists, dieticians, mental health providers and social workers. He also offers some diagnostic imaging to ensure patients have easier access to testing, specialists and comprehensive healthcare.</p><p>Beyond interfacing with patients, Clark devotes time and resources to research emerging standards of care to remain professionally adept and administer evidence-based medicine.</p></div>,
+        teamProfile: [{
+          name: "Amanda Moore",
+          role: "Office Manager",
+          bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+        },{
+          name: "Brittney McAdams",
+          role: "Office Administrator",
+          bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+        },{
+          name: "Robin Mulka",
+          role: "Medical Assistant",
+          bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+        },{
+          name: "Adrian Clark",
+          role: "Scribe",
+          bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+        },{
+          name: "Krystal Mulka",
+          role: "Administrative Aide",
+          bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+        },{
+          name: "Lily",
+          role: "Pug",
+          bio: "Slut"
+        }]
+      },
+      contact: {
+
+      },
       carousel: [
         {
           backgroundImage: "IMG_3131i.jpg",
@@ -85,10 +113,10 @@ export class App extends Component {
         <div className="App">
           <Navbar></Navbar>
           <Route exact path="/" render={(props) => <HomePage marketing={this.state.marketing} carousel={this.state.carousel} />}/>
-          <Route path="/About" render={(props) => <AboutPage/>}/>
+          <Route path="/About" render={(props) => <AboutPage profile={this.state.profile}/>}/>
           <Route path="/Services" render={(props) => <ServicesPage services={this.state.services} />}/>
           <Route path="/ObesityCenter" render={(props) => <ObesityCenterPage/>}/>
-          <Route path="/Contact" render={(props) => <ContactPage/>}/>
+          <Route path="/Contact" render={(props) => <ContactPage contact={this.state.contact}/>}/>
           <Footer></Footer>
         </div>
       </Router>
