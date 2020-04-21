@@ -14,6 +14,7 @@ import ObesityCenterPage from './components/ObesityCenterPage';
 import ContactPage from './components/ContactPage';
 
 
+
 export class App extends Component {
   constructor (props) {
     super(props);
@@ -21,7 +22,7 @@ export class App extends Component {
     this.state = {
       profile: {
         proflileImage: "IMG_3171i.jpg",
-        profileCopy: <div><p>Donald Clark, PA-C, makes access to comprehensive medical care convenient for his aging patients and extends care to underserved communities in metro Detroit and in Central and South America. In 2004, after working for several years in cardiology, urgent care and in primary care practices, he established <span><a href="/">Clark Center for Comprehensive Medicine</a></span>. There, he provides centralized access to care to patients, most of whom he’s treated for almost three decades.</p><p>Partnering with two collaborating physicians, Dr. Clark manages patients holistically. Treatment plans tap into patients’ emotional, physical and spiritual well-being as well as social determinants such as access to transportation, mobility, finances and housing. He even likes to involve family members to take a team approach to solving patients’ medical issues. Since most of his patients have complex, debilitating medical problems and are over the age of 50, he has expanded from onsite primary care to offering extended services, including ongoing homecare, hospital, nursing home and sub-acute rehabilitation center rounds. He follows patients from outpatient to inpatient admission and coordinates access to physical and occupational therapists, dieticians, mental health providers and social workers. He also offers some diagnostic imaging to ensure patients have easier access to testing, specialists and comprehensive healthcare.</p><p>Beyond interfacing with patients, Clark devotes time and resources to research emerging standards of care to remain professionally adept and administer evidence-based medicine.</p></div>,
+        profileCopy: <div><p>Donald Clark, PA-C, makes access to comprehensive medical care convenient for his aging patients and extends care to underserved communities in metro Detroit and in Central and South America. In 2004, after working for several years in cardiology, urgent care and in primary care practices, he established <span><a className="bio" href="/">Clark Center for Comprehensive Medicine</a></span>. There, he provides centralized access to care to patients, most of whom he’s treated for almost three decades.</p><p>Partnering with two collaborating physicians, Dr. Clark manages patients holistically. Treatment plans tap into patients’ emotional, physical and spiritual well-being as well as social determinants such as access to transportation, mobility, finances and housing. He even likes to involve family members to take a team approach to solving patients’ medical issues. Since most of his patients have complex, debilitating medical problems and are over the age of 50, he has expanded from onsite primary care to offering extended services, including ongoing homecare, hospital, nursing home and sub-acute rehabilitation center rounds. He follows patients from outpatient to inpatient admission and coordinates access to physical and occupational therapists, dieticians, mental health providers and social workers. He also offers some diagnostic imaging to ensure patients have easier access to testing, specialists and comprehensive healthcare.</p><p>Beyond interfacing with patients, Clark devotes time and resources to research emerging standards of care to remain professionally adept and administer evidence-based medicine.</p></div>,
         teamProfile: [{
           name: "Amanda Moore",
           role: "Office Manager",
@@ -83,9 +84,9 @@ export class App extends Component {
           Copy: <p>We offer nonsurgical weight loss programs utilizing FDA-approved medications, behavior modification, exercise, and changes in lifestyle for overweight and obese patients.</p>      
         },        
         {
-          Title: "House Calls",
+          Title: "Virtual House Calls",
           FAIcon: "fas fa-clinic-medical",
-          Copy: <p>We take pride in offering comprehensive home-based medical care. Our focus in doing so is to maintain your health and independence, and to avoid the need for hospitalization, rehospitalization, or admission into long-term care facilities/nursing homes/skilled rehabilitation centers.</p>    
+          Copy: <p></p>    
         }
       ],
       services: [
@@ -112,10 +113,10 @@ export class App extends Component {
       <Router>
         <div className="App">
           <Navbar></Navbar>
-          <Route exact path="/" render={(props) => <HomePage marketing={this.state.marketing} carousel={this.state.carousel} />}/>
-          <Route path="/About" render={(props) => <AboutPage profile={this.state.profile}/>}/>
+          <Route exact path="/" render={(props) => <HomePage marketing={this.state.marketing} carousel={this.state.carousel} profile={this.state.profile} />}/>
+          {/* <Route path="/About" render={(props) => <AboutPage profile={this.state.profile}/>}/>
           <Route path="/Services" render={(props) => <ServicesPage services={this.state.services} />}/>
-          <Route path="/ObesityCenter" render={(props) => <ObesityCenterPage/>}/>
+          <Route path="/ObesityCenter" render={(props) => <ObesityCenterPage/>}/> */}
           <Route path="/Contact" render={(props) => <ContactPage contact={this.state.contact}/>}/>
           <Footer></Footer>
         </div>

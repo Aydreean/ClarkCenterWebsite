@@ -19,12 +19,14 @@ body {
   padding-top: 56px;
 }
 
-
+.logo {
+  width: 15%;
+}
 
 /*Navigation Styles*/
 .navbar {
-  background: #cbdc9e;
-  box-shadow: 0px 0px 20px 1px #777;
+  background: #005082;
+  /* box-shadow: 0px 0px 5px 1px #777; */
 }
 
 .navbar-toggler,
@@ -81,14 +83,14 @@ h1.cta-text {
 }
 
 button.cta {
-  background: #cbdc9e;
+  background: #005082;
   border: none;
   height: 10vh;
   margin-top: 40px;
 }
 
 .carousel-indicators li {
-  background-color: #cbdc9e;
+  background-color: #005082;
 }
 
 ol.breadcrumb {
@@ -115,11 +117,16 @@ ol.breadcrumb li {
 }
 
 .card i, abbr i {
-  color: #b4cc73;
+  color: #005082;
+}
+
+.mediciSec {
+  background: #ccc;
+  min-height: 50vh;
 }
 
 .appointmentSec, .teamSec {
-  background: #b4cc73;
+  background: #005082;
   padding: 40px 0;
 }
 
@@ -137,22 +144,39 @@ span {
   font-weight: bold;
 }
 
-span a, a {
-  color: #cbdc9e;
+span a {
+  color: #005082;
 }
+
+span a.bio {
+  color: white;
+}
+
 
 .list-group-item {
   border: none;
 }
 
 .list-group-item.active {
-  background: #b4cc73;
+  background: #005082;
 }
 
+.donbio {
+  background: #005082;
+  color: white;
+}
+
+.donbio h2 {
+  text-align: center;
+}
+
+.donny {
+  margin: 0;
+}
 
 /*Footer Styles*/
 footer a {
-  color: #cbdc9e;
+  color: #005082;
 }
 
 footer a:hover {
