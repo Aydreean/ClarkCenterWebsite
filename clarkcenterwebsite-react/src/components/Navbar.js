@@ -15,9 +15,9 @@ const Navbar = (props) => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav ml-auto">
-                        {/* <li className="nav-link"><Link to="/About" className="nav-item">About</Link></li>
-                        <li className="nav-link"><Link to="/Services" className="nav-item">Services</Link></li>
-                        <li className="nav-link"><Link to="/ObesityCenter" className="nav-item">Obesity Center</Link></li> */}
+                        <li className="nav-link"><Link to="#" className="nav-item">Team</Link></li>
+                        {/* <li className="nav-link"><Link to="#" className="nav-item">Services</Link></li> */}
+                        {/* <li className="nav-link"><Link to="#" className="nav-item">Obesity Center</Link></li> */}
                         <li className="nav-link"><Link to="/Contact" className="nav-item">Contact</Link></li>
                         </ul>
                     </div>

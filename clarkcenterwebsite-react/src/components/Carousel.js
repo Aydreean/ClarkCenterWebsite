@@ -19,27 +19,39 @@ const Carousel = (props) => {
                     <div className="col-lg-6">
                         <div>
                             <h1 className="text-center contentstart text-white cta-text">Discover A Healthier You</h1>
-                                <button className="btn btn-lg btn-secondary btn-block cta shadow"><i className="fas fa-phone-alt mr-4"></i>Call Our Office!</button>
+                                <button className="btn btn-lg btn-secondary btn-block cta shadow"><a href="tel:17346587687"><i className="fas fa-phone-alt mr-4"></i>Call Our Office!</a></button>
                         </div>
                     </div>
                     </div>
                 </div>
-                <div className="carousel-caption d-none d-md-block">
+                {/* <div className="carousel-caption d-none d-md-block">
                     <div className="carousel-caption d-none d-md-block">
                         </div>
-                </div>
+                </div> */}
                 </div>
                 <div className="carousel-item" style={{backgroundImage: "url(" + Slide2 + ")"}}>
-                <div className="carousel-caption d-none d-md-block">
-                    <h3>Second Slide</h3>
-                    <p>This is a description for the second slide.</p>
-                </div>
+                    <div className="container">
+                        <div className="row homeJumbo">
+                        <div className="col-lg-6">
+                            <div>
+                                <h1 className="text-center contentstart text-white cta-text">Remote Consultations</h1>
+                                    <button className="btn btn-lg btn-secondary btn-block cta shadow">Download Medici</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="carousel-item" style={{backgroundImage: "url(" + Slide3 + ")"}}>
-                <div className="carousel-caption d-none d-md-block">
-                    <h3>Third Slide</h3>
-                    <p>This is a description for the third slide.</p>
-                </div>
+                    <div className="container">
+                        <div className="row homeJumbo">
+                        <div className="col-lg-6">
+                            <div>
+                                <h1 className="text-center contentstart text-white cta-text">Refill Prescriptions</h1>
+                                    <button className="btn btn-lg btn-secondary btn-block cta shadow">Call Our Office!</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>

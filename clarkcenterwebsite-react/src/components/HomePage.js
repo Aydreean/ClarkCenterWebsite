@@ -4,6 +4,7 @@ import React from 'react';
 import Carousel from './Carousel';
 import Marketing from './Marketing';
 import Medici from './Medici';
+import Dispensary from './Dispensary';
 import AppointmentForm from './AppointmentForm';
 import HomeMap from './HomeMap';
 import DonBio from './DonBio';
@@ -16,10 +17,10 @@ const HomePage = (props) => {
         <div>
             <Carousel carousel={props.carousel}></Carousel>
             <Marketing marketing={props.marketing}></Marketing>
-            <Medici></Medici>
+            <Medici content={props.content.Medici}></Medici>
+            <Dispensary content={props.content.Dispensary}></Dispensary>
             <DonBio profileImage={DonImage} profileCopy={props.profile.profileCopy}></DonBio>
             <TeamBio teamProfile={props.profile.teamProfile}></TeamBio>
-            {/* <AppointmentForm></AppointmentForm> */}
             <HomeMap></HomeMap>
         </div>
     )

@@ -26,27 +26,32 @@ export class App extends Component {
         teamProfile: [{
           name: "Amanda Moore",
           role: "Office Manager",
-          bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+          bio: ""
         },{
           name: "Brittney McAdams",
           role: "Office Administrator",
-          bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+          bio: ""
         },{
           name: "Robin Mulka",
           role: "Medical Assistant",
-          bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+          bio: ""
         },{
           name: "Adrian Clark",
-          role: "Scribe",
-          bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+          role: "Media / Remote Patient Manager",
+          bio: ""
+        },
+        {
+          name: "Elena Clark",
+          role: "Chronic Care Manager",
+          bio: ""
         },{
           name: "Krystal Mulka",
           role: "Administrative Aide",
-          bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aut mollitia eum ipsum fugiat odio officiis odit."
+          bio: ""
         },{
           name: "Lily",
-          role: "Pug",
-          bio: "Slut"
+          role: "Office Pug",
+          bio: ""
         }]
       },
       contact: {
@@ -76,7 +81,7 @@ export class App extends Component {
         {
           Title: "Internal Medicine",
           FAIcon: "fas fa-stethoscope",
-          Copy: <p>We concentrate on prevention, diagnosis, and treatment of adult diseases. Services are provided at our out-patient facility. We also utilize the <span><a href='https://www.beaumont.org/'>Beaumont Hospital System</a></span> and are affiliated with long-term care facilities and skilled nursing homes.</p>
+          Copy: <p>We concentrate on prevention, diagnosis, and treatment of adult diseases. Services are provided at our Garden City out-patient facility. We also utilize the <span><a href='https://www.beaumont.org/'>Beaumont Hospital System</a></span> and are affiliated with long-term care facilities and skilled nursing homes.</p>
         },
         {
           Title: "Obesity",
@@ -84,9 +89,9 @@ export class App extends Component {
           Copy: <p>We offer nonsurgical weight loss programs utilizing FDA-approved medications, behavior modification, exercise, and changes in lifestyle for overweight and obese patients.</p>      
         },        
         {
-          Title: "Virtual House Calls",
+          Title: "Telemedicine",
           FAIcon: "fas fa-clinic-medical",
-          Copy: <p></p>    
+          Copy: <p>We offer telehealth office visits utilizing Medici.</p>    
         }
       ],
       services: [
@@ -105,7 +110,18 @@ export class App extends Component {
             Title: "Bronchitis",
             Description: "Diabetes is a disease"
         }
-      ]
+      ],
+      content: {
+        Medici: {
+          Header: "We are Remote!",
+          Description:  "To minimize your exposure to COVID-19 and other infectious diseases such as Influenza A & B, we are proud to offer remote services via the Medici Telemedicine mobile app. Using Medici, your provider is able to consult remotely with you via text, audio, and video. Tap below to download Medici to your mobile phone! $50 for 15-30 minute consultation",
+          Button: "Download Medici"
+        },
+        Dispensary: {
+          Header: "Prescription Refills",
+          Description:  "For your convenience, we have several common prescriptions available directly in the office. Save a trip to your pharmacy by filling your prescriptions "
+        }
+      }
     }
   }
   render() {
@@ -113,7 +129,7 @@ export class App extends Component {
       <Router>
         <div className="App">
           <Navbar></Navbar>
-          <Route exact path="/" render={(props) => <HomePage marketing={this.state.marketing} carousel={this.state.carousel} profile={this.state.profile} />}/>
+          <Route exact path="/" render={(props) => <HomePage marketing={this.state.marketing} carousel={this.state.carousel} profile={this.state.profile} content={this.state.content} />}/>
           {/* <Route path="/About" render={(props) => <AboutPage profile={this.state.profile}/>}/>
           <Route path="/Services" render={(props) => <ServicesPage services={this.state.services} />}/>
           <Route path="/ObesityCenter" render={(props) => <ObesityCenterPage/>}/> */}

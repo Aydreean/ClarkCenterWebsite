@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Medici = () => {
+const Medici = (props) => {
     return (
         <div className="mediciSec">
-            <h1>WE ARE ON MEDICI</h1>
+            <h1>{props.content.Header}</h1>
+            <p>{props.content.Description}</p>
+            <button className="btn cta">{props.content.Button}</button>
         </div>
     )
 }

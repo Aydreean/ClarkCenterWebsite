@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-  width: 15%;
+  width: 15vw;
 }
 
 /*Navigation Styles*/
@@ -55,13 +55,6 @@ body {
   background-size: cover;
 }
 
-
-
-/*Content Styles*/
-.contentstart {
-  padding-top: 20px;
-}
-
 .homeJumbo {
   height: 90vh;
 }
@@ -93,6 +86,13 @@ button.cta {
   background-color: #005082;
 }
 
+
+
+/*Content Styles*/
+.contentstart {
+  padding-top: 20px;
+}
+
 ol.breadcrumb {
   background: none;
   margin-top: -10px;
@@ -120,11 +120,9 @@ ol.breadcrumb li {
   color: #005082;
 }
 
-.mediciSec {
-  background: #ccc;
-  min-height: 50vh;
-}
 
+
+/*Appointment Styles*/
 .appointmentSec, .teamSec {
   background: #005082;
   padding: 40px 0;
@@ -152,7 +150,6 @@ span a.bio {
   color: white;
 }
 
-
 .list-group-item {
   border: none;
 }
@@ -161,6 +158,9 @@ span a.bio {
   background: #005082;
 }
 
+
+
+/*About Styles*/
 .donbio {
   background: #005082;
   color: white;
@@ -173,6 +173,30 @@ span a.bio {
 .donny {
   margin: 0;
 }
+
+
+
+/*Medici & Dispensary Styles*/
+.mediciSec, .dispensarySec {
+  text-align: center;
+  padding: 10vh;
+  margin: auto;
+}
+
+.mediciSec {
+  background: #005082;
+  color: white;
+}
+
+.mediciSec button {
+  background: white;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+  width: 20%;
+}
+
+
 
 /*Footer Styles*/
 footer a {
