@@ -114,12 +114,14 @@ export class App extends Component {
       content: {
         Medici: {
           Header: "We are Remote!",
-          Description:  "To minimize your exposure to COVID-19 and other infectious diseases such as Influenza A & B, we are proud to offer remote services via the Medici Telemedicine mobile app. Using Medici, your provider is able to consult remotely with you via text, audio, and video. Tap below to download Medici to your mobile phone! $50 for 15-30 minute consultation",
-          Button: "Download Medici"
+          Description:  "To minimize your exposure to COVID-19 and other infectious diseases such as Influenza A & B, we are proud to offer remote services via the Medici Telemedicine mobile app. Using Medici, your provider is able to consult remotely with you via text, audio, and video. Tap below to download Medici to your mobile phone!",
+          Button: "Download Medici",
+          Price: "$50 / 30 minute consultation",
+          Warning: "All Payments are collected inside of the Medici App"
         },
         Dispensary: {
           Header: "Prescription Refills",
-          Description:  "For your convenience, we have several common prescriptions available directly in the office. Save a trip to your pharmacy by filling your prescriptions "
+          Description:  "For your convenience, we have several common prescriptions available directly in the office. Save a trip to your pharmacy by refilling your prescriptions during your appointment. We offer the most popular brands of these medication classes:"
         }
       }
     }

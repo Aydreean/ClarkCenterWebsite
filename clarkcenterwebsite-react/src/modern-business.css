@@ -79,7 +79,8 @@ button.cta {
   background: #005082;
   border: none;
   height: 10vh;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
+  width: 350px;
 }
 
 .carousel-indicators li {
@@ -192,10 +193,18 @@ span a.bio {
   background: white;
   color: #000;
   text-align: center;
-  margin: 0 auto;
-  width: 20%;
+  margin: 20px auto;
+  width: 350px;
 }
 
+small {
+  display: block;
+}
+
+.dispensarySec ul,
+.dispensarySec li {
+  text-align: left;
+}
 
 
 /*Footer Styles*/
@@ -213,3 +222,21 @@ footer.stickybottom {
   left: 0;
   width: 100%;
 }
+
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+  body {
+    padding-top: 0;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  button.cta,
+  .mediciSec button {
+    text-align: center;
+    width: 350px;
+  }
+} 
