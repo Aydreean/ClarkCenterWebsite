@@ -3,15 +3,15 @@ import { Component } from 'react';
 import './modern-business.css';
 import 'font-awesome/css/font-awesome.css';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 //Custom Components
 import Navbar from './components/Navbar';
 import HomePage from './components/HomePage';
-import AboutPage from './components/AboutPage';
-import ServicesPage from './components/ServicesPage';
-import Footer from './components/Footer';
-import ObesityCenterPage from './components/ObesityCenterPage';
+import MediciPage from './components/MediciPage';
 import ContactPage from './components/ContactPage';
+import Footer from './components/Footer';
+
 
 
 
@@ -22,7 +22,10 @@ export class App extends Component {
     this.state = {
       profile: {
         proflileImage: "IMG_3171i.jpg",
-        profileCopy: <div><p>Donald Clark, PA-C, makes access to comprehensive medical care convenient for his aging patients and extends care to underserved communities in metro Detroit and in Central and South America. In 2004, after working for several years in cardiology, urgent care and in primary care practices, he established <span><a className="bio" href="/">Clark Center for Comprehensive Medicine</a></span>. There, he provides centralized access to care to patients, most of whom he’s treated for almost three decades.</p><p>Partnering with two collaborating physicians, Dr. Clark manages patients holistically. Treatment plans tap into patients’ emotional, physical and spiritual well-being as well as social determinants such as access to transportation, mobility, finances and housing. He even likes to involve family members to take a team approach to solving patients’ medical issues. Since most of his patients have complex, debilitating medical problems and are over the age of 50, he has expanded from onsite primary care to offering extended services, including ongoing homecare, hospital, nursing home and sub-acute rehabilitation center rounds. He follows patients from outpatient to inpatient admission and coordinates access to physical and occupational therapists, dieticians, mental health providers and social workers. He also offers some diagnostic imaging to ensure patients have easier access to testing, specialists and comprehensive healthcare.</p><p>Beyond interfacing with patients, Clark devotes time and resources to research emerging standards of care to remain professionally adept and administer evidence-based medicine.</p></div>,
+        profileCopy: <div><p>Hello! I'm Donald Clark, P.A.-C. I am a graduate from The Mercy College of Detroit Physician Assistant program in 1987 and have been continuously licensed and certified as a Physician Assistant since 1987 by the N.C.C.P.A. I have extensive experience in various medical sub specialties such as: Primary Care, Internal Medicine, Cardiology, Urgent Care, Sub-acute rehabilitation Medicine, and Medical House Calls. I am affiliated with the Beaumont Hospital Health System with privileges at Beaumont in Dearborn, Michigan, and Beaumont Hospital in Wayne, Michigan. I am also an affiliate instructor for the University of Detroit Physician Assistant program and have been a preceptor for several Nurse Practitioner programs. I have completed training by ISCD, and am a certified clinical densitometrist.</p>
+
+        <p>Additionally, I have been affiliated sub-acute rehabilitation centers in Wayne County, Michigan. I am the medical provider for home bound patients in Wayne County, Michigan. I speaks Spanish fluently and have been a volunteer on charitable medical missions to Latin America.</p>
+        <p>Currently, I am the President of Clark Center for Comprehensive Medicine, P.C. in Garden City, Michigan.</p></div>,
         teamProfile: [{
           name: "Amanda Moore",
           role: "Office Manager",
@@ -94,27 +97,10 @@ export class App extends Component {
           Copy: <p>We offer telehealth office visits utilizing Medici.</p>    
         }
       ],
-      services: [
-        {
-            id: 1,
-            Title: "Arthritis",
-            Description: "Diabetes is a disease"
-        },
-        {
-            id: 2,
-            Title: "Atrial Fibrilation",
-            Description: "Diabetes is a disease"
-        },
-        {
-            id: 3,
-            Title: "Bronchitis",
-            Description: "Diabetes is a disease"
-        }
-      ],
       content: {
         Medici: {
           Header: "We are Remote!",
-          Description:  "To minimize your exposure to COVID-19 and other infectious diseases such as Influenza A & B, we are proud to offer remote services via the Medici Telemedicine mobile app. Using Medici, your provider is able to consult remotely with you via text, audio, and video. Tap below to download Medici to your mobile phone!",
+          Description:  "To minimize your exposure to COVID-19, Influeza A & B, and other infectious diseases, we are proud to offer remote services via the Medici Telemedicine mobile app. Using Medici, your provider is able to consult remotely with you via text, audio, and video. Tap below to download Medici to your mobile phone!",
           Button: "Download Medici",
           Price: "$50 / 30 minute consultation",
           Warning: "All Payments are collected inside of the Medici App"
@@ -129,13 +115,14 @@ export class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className="App" id="top">
           <Navbar></Navbar>
           <Route exact path="/" render={(props) => <HomePage marketing={this.state.marketing} carousel={this.state.carousel} profile={this.state.profile} content={this.state.content} />}/>
           {/* <Route path="/About" render={(props) => <AboutPage profile={this.state.profile}/>}/>
           <Route path="/Services" render={(props) => <ServicesPage services={this.state.services} />}/>
           <Route path="/ObesityCenter" render={(props) => <ObesityCenterPage/>}/> */}
           <Route path="/Contact" render={(props) => <ContactPage contact={this.state.contact}/>}/>
+          <Route path="/Medici" render={(props) => <MediciPage contact={this.state.contact}/>}/>
           <Footer></Footer>
         </div>
       </Router>

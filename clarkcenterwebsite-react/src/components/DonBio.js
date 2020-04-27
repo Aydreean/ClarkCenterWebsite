@@ -3,7 +3,7 @@ import DonImage from '../images/IMG_3171i.png';
 
 const DonBio = (props) => {
     return (
-        <div className="donbio">
+        <div className="donbio" id="team">
             <div className="container">
                 <h2>Our Team</h2>
                 <div className="row">

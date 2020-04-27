@@ -12,6 +12,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -75,12 +76,21 @@ h1.cta-text {
   text-shadow: 1px 1px 3px #444;
 }
 
-button.cta {
-  background: #005082;
+button.cta, button.medici {
   border: none;
   height: 10vh;
   margin: 40px auto 0 auto;
   width: 350px;
+}
+
+button.cta {
+  background: #005082;
+  border: none;
+}
+
+button.medici {
+  background: #21ce99;
+  border: none;
 }
 
 .carousel-indicators li {
@@ -191,10 +201,28 @@ span a.bio {
 
 .mediciSec button {
   background: white;
-  color: #000;
+  color: #005082;
+  font-size: smaller;
   text-align: center;
   margin: 20px auto;
+  min-height: 125px;
   width: 350px;
+}
+
+.medicicta {
+  color: #005082;
+  display: block;
+  font-size: smaller;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button.btn {
+  width: 350px;
+}
+
+button.btn img {
+  width: 100%;
 }
 
 small {
@@ -205,6 +233,7 @@ small {
 .dispensarySec li {
   text-align: left;
 }
+
 
 
 /*Footer Styles*/
@@ -238,5 +267,18 @@ footer.stickybottom {
   .mediciSec button {
     text-align: center;
     width: 350px;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+
+
+  button.cta,
+  .mediciSec button {
+    text-align: center;
+    width: 100%;
   }
 } 

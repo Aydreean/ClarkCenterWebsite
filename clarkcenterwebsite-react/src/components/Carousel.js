@@ -2,6 +2,7 @@ import React from 'react';
 import Slide1 from "../images/IMG_3131i.jpg";
 import Slide2 from "../images/IMG_3126.JPG";
 import Slide3 from "../images/IMG_3124.JPG";
+import MediciLogo from '../images/medici.png';
 
 const Carousel = (props) => {
     return (
@@ -35,7 +36,9 @@ const Carousel = (props) => {
                         <div className="col-lg-6">
                             <div>
                                 <h1 className="text-center contentstart text-white cta-text">Remote Consultations</h1>
-                                    <button className="btn btn-lg btn-secondary btn-block cta shadow">Download Medici</button>
+                                <div className="mediciSec">
+                                    <a href="https://medici.cx/patients"><button className="btn btn-lg medicicta"><img src={MediciLogo}></img><br/>Tap to Download</button></a>
+                                </div>
                             </div>
                         </div>
                         </div>
@@ -47,7 +50,7 @@ const Carousel = (props) => {
                         <div className="col-lg-6">
                             <div>
                                 <h1 className="text-center contentstart text-white cta-text">Refill Prescriptions</h1>
-                                    <button className="btn btn-lg btn-secondary btn-block cta shadow">Call Our Office!</button>
+                                    <button className="btn btn-lg btn-secondary btn-block cta shadow"><a href="tel:17343671205">Call Our Office!</a></button>
                             </div>
                         </div>
                         </div>

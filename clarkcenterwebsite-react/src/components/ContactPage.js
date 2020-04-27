@@ -6,7 +6,6 @@ const ContactPage = () => {
     return (
         <div>
             <ContactInfo></ContactInfo>
-            <AppointmentForm></AppointmentForm>
         </div>
     )
 }
